@@ -1,0 +1,21 @@
+#cuadradoRojo{
+	background-color: red;);
+	width: 400px;
+	height: 400px;
+	display: none;
+}
+.cuadradoAzul{
+	background-color: blue;
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+}
+#Srisakdi{
+	font-family: 'Srisakdi', cursive;
+}
+p{
+	color: violet;
+}
+span{
+	color: blue;
+}
