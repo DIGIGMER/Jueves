@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Viernes</title>
+	<title>Jueves</title>
 </head>
 <body>
-	<h1>https://github.com/DIGIGMER/Viernes</h1>
-	<h1>Bootstrap</h1>
 	<script type="text/javascript">
-		var contador = 0;
+		var contador = 1;
 		const CrearHijo = function() {
 			const nuevo_hijo = document.createElement("div");
 			nuevo_hijo.style.width = "30%";
 			nuevo_hijo.style.height = "30px";
-			nuevo_hijo.style.border = "1px solid #000";
+			nuevo_hijo.style.border = "1px solid black";
 			nuevo_hijo.style.display = "inline-block";
-			nuevo_hijo.innerText = "hijo " + contador;
+			nuevo_hijo.innerText = "hijo" + contador;
 			contador++;
-
 			return nuevo_hijo;
 		}
 
 		const contenedor = document.createElement("div");
 		contenedor.style.width = "1000px";
 		contenedor.style.height = "600px";
-		contenedor.style.border = "1px solid #000";
+		contenedor.style.border = "1px solid black";
 
 		const titulo = document.createElement("div");
 		titulo.style.width = "100%";
 		titulo.style.height = "30px";
 		titulo.style.border = "1px solid red";
 		titulo.innerText = "titulo";
-		titulo.style.backgroundColor = "pink";
 		titulo.style.textAlign = "center";
+		titulo.style.backgroundColor = "pink";
 
 		const divizq = document.createElement("div");
 		divizq.style.width = "498px";
 		divizq.style.height = "300px";
-		divizq.style.border = "1px solid blue";	
+		divizq.style.border = "1px solid blue";
 		divizq.style.display = "inline-block";
 
 		const divder = divizq.cloneNode(true);
-		divder.style.border = "1px solid red";
+		divder.style.border = "1px solid green";
 
-	 	var condicional = 10;
-	 	const aleatorio = Math.floor(Math.random()*10);
+		var condicional = 10;
+		const num_aleatorio = Math.floor(Math.random()*11);
 		for (var variable = 1; variable <= condicional; variable++) {
-				var hijo_automatico = CrearHijo();
-				divizq.appendChild(hijo_automatico);
+			var hijo_automatico = CrearHijo();
+			divizq.appendChild(hijo_automatico);
 
-				if (variable === 7) {
-					hijo_automatico.style.backgroundColor = "green";
-				}
-				else if (variable === 2){
-					hijo_automatico.style.backgroundColor = "violet";
-				}
-				if (variable === aleatorio){
-					hijo_automatico.style.backgroundColor = "yellow";
-				}
+			if (variable === 5) {
+				hijo_automatico.style.backgroundColor = "orange";
+			}
+			else if (variable === 1) {
+				hijo_automatico.style.backgroundColor = "gray";
+			}
+			if (variable === num_aleatorio){
+				hijo_automatico.style.backgroundColor = "violet";
+
+			}
 		}
 
 		document.body.appendChild(contenedor);
@@ -64,5 +62,6 @@
 		contenedor.appendChild(divizq);
 		contenedor.appendChild(divder);
 	</script>
+	<h1>Bootstrap</h1>
 </body>
 </html>
