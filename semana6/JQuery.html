@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jueves</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./estilos.css">
+	<!--script type="text/javascript">
+	$(document).ready(function(){
+		$("p").click(function(){
+			alert("hola");
+		});
+	})
+	</script-->
+</head>
+<body>
+	
+	<p class="bt">click aqui</p>
+	<p id="oc">Otro Click</p>
+	<a id="gb" href="https://www.google.com" target="_blank"><button>Gobierno</button></a>
+	<a id="yt" href="https://www.youtube.com">Ir a youtube</a>
+	<div>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSW83qD9dfrZVY_sHYW4k51YVXaJn4NT54Ts9o8qsWpIu6kA0E">
+		<p id="pp">esto es un texto</p>
+	</div>
+	<script type="text/javascript">
+		$(".bt").click(function(){
+			alert("hola");
+		$("#oc").css("background-color", "red");
+		});
+		$("#oc").click(function(){
+			$("#gb").attr("href", "http://www.hidalgo.gob.mx");
+			$("#yt").addClass("yout");
+			$("img").hide();
+			$("#pp").show();
+		});
+	</script>
+</body>
+</html>

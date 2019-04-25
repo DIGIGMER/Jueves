@@ -1,0 +1,21 @@
+.bt{
+	background-color: pink;
+	width: 150px;
+	height: auto;
+	border: 2px solid magenta;
+	text-align: center;
+	cursor: pointer;
+
+}
+.yout{
+	color: red;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.yout:hover{
+	text-decoration: none;
+	color: orange;
+}
+#pp{
+	display:none;
+}
